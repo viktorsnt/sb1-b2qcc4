@@ -22,7 +22,7 @@ const Header = () => {
         <Link href="/" className="text-2xl font-bold">
           Time to Be...
         </Link>
-        <nav className="hidden md:flex space-x-4">
+        <nav className="hidden md:flex items-center space-x-4">
           {menuItems.map((item) => (
             <Link
               key={item.name}
@@ -32,7 +32,7 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
-          <Button>Book Now</Button>
+          <a href="#contact" className="text-lg inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-primary text-primary-foreground hover:bg-primary/90">Book Now</a>
         </nav>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">

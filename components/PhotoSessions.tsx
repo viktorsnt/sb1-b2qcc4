@@ -28,10 +28,15 @@ const PhotoSessions = () => {
   return (
     <section id="sessions" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">Our Photo Sessions</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center">Our Photo Sessions</h2>
+        <p className="text-center text-gray-600 mb-12">
+          Costumamos dizer que transformamos mulheres em deusas porque, ao saírem daqui, cada uma relata sua descoberta e que viveu uma experiência incrível de despertar. Sabemos que o nosso objetivo é proporcionar sempre uma experiência única. Se você também deseja passar por essa transformação, buscar uma imagem mais confiante ou registrar um momento especial de sua vida, você está no lugar certo!
+          <br/>
+          Nossos ensaios foram cuidadosamente planejados para revelar sua verdadeira beleza.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {sessions.map((session, index) => (
-            <Card key={index} className="overflow-hidden">
+            <Card key={index} className="overflow-hidden ">
               <CardHeader className="p-0">
                 <Image
                   src={session.image}
